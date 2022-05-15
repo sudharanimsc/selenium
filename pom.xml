@@ -1,11 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>git.project</groupId>
-  <artifactId>git.practice.project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-<name>git.project</name>
-  <description>git.project</description> <build>
-<plugins>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>nihb</groupId>
+	<artifactId>nihbproject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -27,48 +26,49 @@
 							<goal>java</goal>
 						</goals>
 					</execution>
-				</executions>	
+				</executions>
 				<configuration>
-					<mainClass>git.practice.project.MyClass1</mainClass>
+					<mainClass>com.esc.nihb.driverscript.Driver</mainClass>
 					<cleanupDaemonThreads>false</cleanupDaemonThreads>
 					<includePluginDependencies>true</includePluginDependencies>
-					<includeProjectDependencies>true</includeProjectDependencies>					
-				</configuration>			
-				</plugin>
-  </plugins>
- </build> 
- <dependencies>   
- 		<!-- Framework Jar -->  
- 		<dependency>
+					<includeProjectDependencies>true</includeProjectDependencies>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+      <!--  Framework Jar  -->
+		<dependency>
 			<groupId>com.esc.nihb</groupId>
 			<artifactId>test-automation-framework</artifactId>
-			<version>0.3.2-SNAPSHOT</version>
-		</dependency>  
-  		 <!-- Selenium Java -->
+			<version>0.2</version>
+		</dependency>
+	
+			<!--  Selenium Java  -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.13.0</version>
 		</dependency>
-		 <!-- Selenium Server -->
+		<!--  Selenium Server  -->
 		<dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-server</artifactId>
-            <version>3.13.0</version>
-        </dependency>	
-		<!-- Extent Reports -->
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+		<!--  Extent Reports  -->
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>2.41.1</version>
-		</dependency>	
-		<!-- Extent Reports -->
+		</dependency>
+		<!--  Extent Reports  -->
 		<dependency>
-	    	<groupId>com.aventstack</groupId>
-	  	    <artifactId>extentreports</artifactId>
-	        <version>3.1.5</version>
-	    </dependency>	
-		<!-- Apache POI -->
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		<!--  Apache POI  -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -78,32 +78,31 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.13</version>
-		</dependency>	
+		</dependency>
 		<dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <version>6.2.1.jre8</version>
-        </dependency>	
-  		<dependency>
-    		<groupId>log4j</groupId>
-    		<artifactId>log4j</artifactId>
-   			<version>1.2.17</version>
-		</dependency>  		
-  		<dependency>
-  			<groupId>org.apache.logging.log4j</groupId>
-   			<artifactId>log4j-api</artifactId>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>6.2.1.jre8</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
 			<version>2.10.0</version>
-  		</dependency>
-  		<dependency>
-   			<groupId>org.apache.logging.log4j</groupId>
-  			<artifactId>log4j-core</artifactId>
-    		<version>2.10.0</version>
- 		</dependency>	
- 		<dependency>
-    <groupId>net.sourceforge.htmlunit</groupId>
-    <artifactId>htmlunit-core-js</artifactId>
-    <version>2.28</version>
-</dependency>
- </dependencies>
-
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit-core-js</artifactId>
+			<version>2.28</version>
+		</dependency>
+	</dependencies>
 </project>
